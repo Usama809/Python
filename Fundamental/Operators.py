@@ -40,3 +40,4 @@ print (e >= f)
 
 print (12 > 10 and 30 == 30 )
 print (12 < 140 or 40 == 40)
+print (not 12 ==12)
