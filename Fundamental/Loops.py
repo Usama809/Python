@@ -20,9 +20,39 @@
 
 # Break in statement loops 
 
-for i in range (1 , 20):
-    print (i)
-    if i == 15:
-        break
-    else:
-        print(i)
+# for i in range (1 , 21):
+#     if i == 15:
+#         # break
+#         continue
+#     else:
+#         print(i)
+
+
+# Problem Solving 
+
+# Q1 - Accept an integer and Print hello world n times 
+# n = int(input("Enter your integar"))
+
+# for i in range (1, n+1 ,1):
+#     print("Hello world")
+
+# Q2 - Print natural number up to n 
+
+# n = int(input("Enter the numbers"))
+
+# for i in range (1 , n+1 , 1):
+#     print(i)
+
+# Q3 - Reverse for loop. Print n to 1 
+
+# n = int(input("Enter the numbers"))
+
+# for i in range(n, 0 , -1):
+#     print (i)
+
+# Q4 - Take a number as input and print its table
+
+n = int(input("Which table you wnnt to print"))
+
+for i in range (1 ,11):
+    print (f"{n} * {i}  = {n*i}")
