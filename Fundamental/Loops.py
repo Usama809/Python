@@ -52,7 +52,28 @@
 
 # Q4 - Take a number as input and print its table
 
-n = int(input("Which table you wnnt to print"))
+# n = int(input("Which table you wnnt to print"))
 
-for i in range (1 ,11):
-    print (f"{n} * {i}  = {n*i}")
+# for i in range (1 ,11):
+#     print (f"{n} * {i}  = {n*i}")
+
+# Q5 - Sum up to n terms 
+
+# n = int(input("Sum all number"))
+
+# sum = 0
+
+# for i in range(1,n+1,1):
+#     sum = sum + i
+
+#     print (f"your number is {sum}")
+
+# Q6 - Factorial of a number
+n = int(input("Factorial of all number"))
+
+fact = 1
+
+for i in range(1,n+1,1):
+    fact = fact * i
+
+    print (f"your factorial number is {fact}")
