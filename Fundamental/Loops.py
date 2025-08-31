@@ -69,11 +69,27 @@
 #     print (f"your number is {sum}")
 
 # Q6 - Factorial of a number
-n = int(input("Factorial of all number"))
 
-fact = 1
+# n = int(input("Factorial of all number"))
 
-for i in range(1,n+1,1):
-    fact = fact * i
+# fact = 1
 
-    print (f"your factorial number is {fact}")
+# for i in range(1,n+1,1):
+#     fact = fact * i
+
+#     print (f"your factorial number is {fact}")
+
+# Q6 - Print the sum of all even & odd numbers in a range separately 
+
+n = int(input("Tell me the number"))
+even = 0
+odd = 0
+
+for i in range(1 , n+1):
+    if i%2 == 0:
+        even = even + i
+    else:
+        odd = odd + i 
+            
+    print(f"your even and odd sum are {even}, {odd}")
+
