@@ -81,15 +81,37 @@
 
 # Q6 - Print the sum of all even & odd numbers in a range separately 
 
-n = int(input("Tell me the number"))
-even = 0
-odd = 0
+# n = int(input("Tell me the number"))
+# even = 0
+# odd = 0
 
-for i in range(1 , n+1):
-    if i%2 == 0:
-        even = even + i
-    else:
-        odd = odd + i 
+# for i in range(1 , n+1):
+#     if i%2 == 0:
+#         even = even + i
+#     else:
+#         odd = odd + i 
             
-    print(f"your even and odd sum are {even}, {odd}")
+#     print(f"your even and odd sum are {even}, {odd}")
 
+# Q7 - Print all the factors of a number 
+
+# n = int(input("Tell me the number"))
+# for i in range(1 , n+1):
+#     if n%i == 0:
+#         print(i)
+
+#  Q 8 -- Accept a number and check if it a perfect number or not.
+
+#  A number whose sum of factors is equal to the number itself
+#  Ex - 6 = 1, 2, 3 = 6 
+
+n = int(input("Check your number is perfect or not"))
+sum = 0
+for i in range(1 , n):
+    if n%i == 0:
+        sum = sum + i
+
+if sum ==0:
+    print("your number is perfect")
+else:
+  print("Not a perfect number")
