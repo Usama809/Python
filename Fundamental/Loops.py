@@ -105,13 +105,26 @@
 #  A number whose sum of factors is equal to the number itself
 #  Ex - 6 = 1, 2, 3 = 6 
 
-n = int(input("Check your number is perfect or not"))
-sum = 0
-for i in range(1 , n):
-    if n%i == 0:
-        sum = sum + i
+# n = int(input("Check your number is perfect or not"))
+# sum = 0
+# for i in range(1 , n):
+#     if n%i == 0:
+#         sum = sum + i
 
-if sum ==0:
-    print("your number is perfect")
+# if sum == 0:
+#     print("your number is perfect")
+# else:
+#   print("Not a perfect number")
+
+# Q9 - Check wether the number is prime or not 
+
+n = int(input("Check your number is prime or not"))
+count = 0
+for i in range(1 , n+1):
+    if n%i == 0:
+        count = count + 1
+        
+if count == 2:
+    print ("Your numbe is prime")
 else:
-  print("Not a perfect number")
+    print ("Your numbe is not prime")
