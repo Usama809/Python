@@ -172,17 +172,81 @@
 
 #  Symbol = 4
 
-a = "sskrinf1223n5@^&^!"
-char = 0
-digit = 0
-specialchr = 0
+# a = "sskrinf1223n5@^&^!"
+# char = 0
+# digit = 0
+# specialchr = 0
 
 
-for i in a:
-    if i.isalpha():
-       char += 1
-    elif i.isdigit():
-        digit += 1
+# for i in a:
+#     if i.isalpha():
+#        char += 1
+#     elif i.isdigit():
+#         digit += 1
+#     else:
+#         specialchr += 1
+# print(f"your character is {char}\n your digit are {digit}\n your specialcharacter is {specialchr}")
+
+        # While Loops Learning Start
+
+# Q1 - Separate each digit of a number and print it on the new line
+
+# n = int(input("Tel your number"))
+
+# while n > 0:
+#     print (n % 10)
+#     n = n// 10
+
+#  Q2- Accept a number and print its reverse
+
+# a = int(input("Tel your number"))
+# rev = 0
+# while a > 0:
+#     rev = rev * 10 + a % 10
+#     a = a//10
+
+# print (rev)
+
+# Q3 - Accept a number and check if it is a pallindromic number (If
+# number and its reverse are equal?
+
+# a = int(input("Tel your number"))
+# copy = a
+# rev = 0
+# while a > 0:
+#  rev = rev * 10 +  a % 10
+#  a = a // 10
+
+# if copy == rev:
+#  print("This is your Palindromic number")
+# else:
+#   print("This is not your Palindromic number") 
+ 
+
+import random
+
+
+num = random.randint(1 , 10)
+tries = 0
+
+while True:
+    guess = int(input("Please guess your number between 1 to 10 :-"))
+
+    if num == guess:
+        tries += 1
+        print (f"you are right you guessed the number is {tries} tries")
+        break
+    elif num < guess:
+        tries += 1 
+        print ("Go a little lower")
+    elif num > guess:
+        tries += 1 
+        print ("Go a little higher")
     else:
-        specialchr += 1
-print(f"your character is {char}\n your digit are {digit}\n your specialcharacter is {specialchr}")
+        tries += 1
+        print ("sorry you are wrong")
+
+
+
+
+
