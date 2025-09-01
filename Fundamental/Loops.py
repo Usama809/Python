@@ -118,13 +118,71 @@
 
 # Q9 - Check wether the number is prime or not 
 
-n = int(input("Check your number is prime or not"))
-count = 0
-for i in range(1 , n+1):
-    if n%i == 0:
-        count = count + 1
-        
-if count == 2:
-    print ("Your numbe is prime")
-else:
-    print ("Your numbe is not prime")
+# n = int(input("Check your number is prime or not"))
+# count = 0
+# for i in range(1 , n+1):
+#     if n%i == 0:
+#         count = count + 1
+
+# if count == 2:
+#     print ("Your numbe is prime")
+# else:
+#     print ("Your numbe is not prime")
+
+# For Loop for strings
+
+# String concatination
+# Q1 - Reverse a string without using in build functions.
+
+# a = "USAMA"
+# b = ""
+# for i in range(len(a)-1 , -1 , -1):
+     
+#      b = b + a[i]
+
+# print(b)
+
+# Q2 - Check string is Pallindrome or not 
+
+# a = "MADAM"
+# b = ""
+# print(len(a))
+
+# for i in range(len(a)-1 , -1 , -1):
+     
+#      b = b + a[i]
+
+# if b == a:
+#      print("Your number is palindrom")
+# else:
+#      print("Your number is not palindrom")
+
+# Q3 - Count all letters, digits, and special symbols from a given
+# string
+
+#  Given: str1 = "P@#yn26at^&i5ve"
+
+#  Expected Outcome:
+
+#  Total counts of chars, digits, and symbols
+
+#  Chars = 8
+
+#  Digits = 3
+
+#  Symbol = 4
+
+a = "sskrinf1223n5@^&^!"
+char = 0
+digit = 0
+specialchr = 0
+
+
+for i in a:
+    if i.isalpha():
+       char += 1
+    elif i.isdigit():
+        digit += 1
+    else:
+        specialchr += 1
+print(f"your character is {char}\n your digit are {digit}\n your specialcharacter is {specialchr}")
