@@ -250,3 +250,14 @@
 
 
 
+def palindrom(st):
+        revers = ""
+        for i in range(len(st) -1 , -1, -1):
+            revers = revers+ st[i]
+
+        if revers == st:
+                print("Palindrom")
+        else:
+                print("Not a Palindrom")
+palindrom("NAMAN")   
+palindrom("USAMA")                     
