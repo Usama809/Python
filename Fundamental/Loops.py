@@ -223,28 +223,28 @@
 #   print("This is not your Palindromic number") 
  
 
-import random
+# import random
 
 
-num = random.randint(1 , 10)
-tries = 0
+# num = random.randint(1 , 10)
+# tries = 0
 
-while True:
-    guess = int(input("Please guess your number between 1 to 10 :-"))
+# while True:
+#     guess = int(input("Please guess your number between 1 to 10 :-"))
 
-    if num == guess:
-        tries += 1
-        print (f"you are right you guessed the number is {tries} tries")
-        break
-    elif num < guess:
-        tries += 1 
-        print ("Go a little lower")
-    elif num > guess:
-        tries += 1 
-        print ("Go a little higher")
-    else:
-        tries += 1
-        print ("sorry you are wrong")
+#     if num == guess:
+#         tries += 1
+#         print (f"you are right you guessed the number is {tries} tries")
+#         break
+#     elif num < guess:
+#         tries += 1 
+#         print ("Go a little lower")
+#     elif num > guess:
+#         tries += 1 
+#         print ("Go a little higher")
+#     else:
+#         tries += 1
+#         print ("sorry you are wrong")
 
 
 

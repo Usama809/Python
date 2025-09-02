@@ -9,13 +9,16 @@ c = 68
 print (chr(c));
 
 #Indexing 
-# st = "Usama Bin Amjad";
-# print(st[4], st[-3]);
+st_0 = "Usama Bin Amjad";
+print(st_0[4], st_0[-3]);
 
 #String Slicing (Start : Stop : Steps)
 st = "Usama Bin Amjad";
-st_1 = "Farah Hafiz Usama Bin Amjad ";
 print(st[10::]); 
+
+st_1 = "Farah Hafiz Usama Bin Amjad ";
 print(st_1[5:17:1]); 
 
+#Type Conversion 
+# (we can convert anythin in integar to string but not convert anything mean(character) string to int)
 
