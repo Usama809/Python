@@ -26,11 +26,57 @@
 #     if i < 0:
 #         print(i)
 
+# Q2 - Mean of List elements?
 
-l = [12,2,43,56]
-sum = 0
-for i in l:
-    sum = sum + i
+# l = [12,2,43,56]
+# sum = 0
+# for i in l:
+#     sum = sum + i
 
-print(sum/len(l))
+# print(sum/len(l))
+
+
+# Q3  - Find the greatest element and print its index too?
+
+# l = [12,2,43,56,25 , 931]
+
+# largest = l[0]
+# index = 0
+# for i in range(len(l)):
+#     if l[i] > largest:
+#       largest = l[i]
+#       index = i
+
+# print(f"your largest number is {largest} at the index {index}")   
+
+
+# Q4 Find the second greatest element?
+
+# l = [12,2,43,56,25,931]
+
+# largest = l[0]
+# sec_largest = l[0] 
+
+# for i in l:
+#     if i > largest:
+#         sec_largest = largest
+#         largest = i
+#     elif i > sec_largest:
+#         sec_largest = i 
+# print(f"Your largest value is {largest} and second {sec_largest}")
+
+# Q5 Check if List is sorted or not.
+
+
+
+# a = [12,2,43,56,25,931]
+a = [1 ,2 ,3,4 ,5]
+for i in range(len(a)-1):
+    if a[i] < a[i+1]:
+        continue
+    else:
+        print("your number is not sorted")
+        break
+else:
+    print("your number is sorted")
 
